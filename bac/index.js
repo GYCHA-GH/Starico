@@ -24,6 +24,17 @@ app.get('/api/blogs', async (req, res) => {
     res.status(500).json({ error: 'Server error' });
   }
 });
+
+app.get('/api/review', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM review ORDER BY id DESC');
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
 app.use('/images', express.static('public/images'));
 
 

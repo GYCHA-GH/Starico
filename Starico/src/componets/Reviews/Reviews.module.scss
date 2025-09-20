@@ -1,0 +1,78 @@
+.article{
+    width: 1440px;
+    height: 1404px;
+    background-image: url(./bac3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .section1{
+        width:1440px;
+        height: 325px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .text{
+        width: 630px;
+        height: 108px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1{
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            font-weight: 400;
+        }
+        p{
+            font-size: 17px;
+            color: white;
+            text-align: center;
+            font-weight: 400;
+            
+        }
+    }
+}
+.section2{
+    width: 1280px;
+    height: 951px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .review{
+        width: 560px;
+        height: 212px;
+        border-radius: 32px;
+        background-color: white;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .div{
+            width: 218px;
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                span{
+                    font-size: 15px;
+                    counter-reset: #162E3C;
+                }
+                p{
+                    color: #49616E;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+   
+    .description{
+        font-size: 18px;
+        color: #49616E;
+    }
+}

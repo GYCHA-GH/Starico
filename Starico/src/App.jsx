@@ -9,6 +9,7 @@ import Img from'./assets/Img.png'
 import Nav from './componets/UL/Nav'
 import Blog from "./componets/Blog/Blog";
 import Email from "./componets/Email/Email";
+import Reviews from "./componets/Reviews/Reviews";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <img src={Img} alt="" />
         </section>
       </header>
+      <Reviews/>
       <article>
         <Blog/>
       </article>
