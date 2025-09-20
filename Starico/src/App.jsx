@@ -12,6 +12,11 @@ import Nav from './componets/UL/Nav'
 import Blog from "./componets/Blog/Blog";
 import Email from "./componets/Email/Email";
 import Reviews from "./componets/Reviews/Reviews";
+import Effcient from "./componets/Effcient/Effcient";
+
+import Bett from "./assets/bett.svg"
+import Less from "./assets/less.svg"
+import More from "./assets/more.svg"
 
 function App() {
   return (
@@ -35,6 +40,7 @@ function App() {
           </div>
           </div>
         </section>
+      </header>
         <section className={classes.section2}>
           <img src={Img} alt="" />
         </section>
@@ -52,12 +58,40 @@ function App() {
             </div>
           </div>
         </section>
-      </header>
+      <section className={classes.section4}>
+        <div className={classes.container4}>
+          <h1>Building your very own Startup has never been simpler</h1>
+          <p className={classes.ntx}>Aenean dui justo, tempus sed odio ut, convallis accumsan nunc. Phasellus mauris sem, porta eu turpis vel, maximus condimentum turpis.</p>
+          <div className={classes.cardB}>
+            <div>
+              <img src={Bett} alt="" />
+              <h3>Better results</h3>
+              <p>Vestibulum posuere odio id purus maximus, vel condimentum nunc tincidunt. Duis sit amet vulputa.</p>
+            </div>
+            <div>
+              <img src={Less} alt="" />
+              <h3>Less paper work</h3>
+              <p>Duis convallis eros eu dolor posuere, sit amet mollis turpis elementum. Aliquam ut sapien enim.</p>
+            </div>
+            <div>
+              <img src={More} alt="" />
+              <h3>More profit</h3>
+              <p>Donec tincidunt est pellentesque, ullamcorper quam sed, aliquam eros. Proin finibus luctus nisi.</p>
+            </div>
+          </div>
+          <div className={classes.buttons1}>
+            <button className={classes.Get2} >Get started</button>
+            <button className={classes.Try2}>Try for free<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7937 7.85074C10.9743 8.03136 10.9743 8.32415 10.7937 8.50476L6.07841 13.22C5.89779 13.4006 5.605 13.4006 5.42438 13.22L5.20633 13.002C5.02571 12.8214 5.02571 12.5285 5.20633 12.3479L9.37654 8.17775L5.20633 4.00755C5.02571 3.82693 5.02571 3.53413 5.20633 3.35351L5.42438 3.13546C5.605 2.95484 5.89779 2.95484 6.07841 3.13546L10.7937 7.85074Z" fill="#162E3C"/></svg></button>
+          </div>
+        </div>
+      </section>
+      <Effcient/>
       <Reviews/>
       <article>
         <Blog/>
       </article>
       <Email/>
+      <footer></footer>
     </main>
     </>
   )
