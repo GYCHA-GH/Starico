@@ -3,7 +3,9 @@ import Log1 from'./assets/log1.svg'
 import Log2 from'./assets/log2.svg'
 import Log3 from'./assets/log3.svg'
 import Log4 from'./assets/log4.svg'
+
 import Img from'./assets/Img.png'
+import Img2 from'./assets/img2.svg'
 
 
 import Nav from './componets/UL/Nav'
@@ -35,6 +37,20 @@ function App() {
         </section>
         <section className={classes.section2}>
           <img src={Img} alt="" />
+        </section>
+        <section className={classes.section3}>
+          <div className={classes.container3}>
+            <img src={Img2} alt="" />
+            <div className={classes.box}>
+              <button className={classes.speed}>Speed</button>
+              <h1>Faster than ever before</h1>
+              <p>Morbi tristique cursus diam, at viverra felis malesuada eu. Duis iaculis velit ac urna fermentum interdum. Ut auctor vitae nisi eget varius. Phasellus rutrum pellentesque lectus pulvinar dapibus aenean dui justro, tempus sed oido.</p>
+              <div>
+                <button className={classes.Get1}>Get started</button>
+                <button className={classes.Try1}>Try for free <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7937 7.85074C10.9743 8.03136 10.9743 8.32415 10.7937 8.50476L6.07841 13.22C5.89779 13.4006 5.605 13.4006 5.42438 13.22L5.20633 13.002C5.02571 12.8214 5.02571 12.5285 5.20633 12.3479L9.37654 8.17775L5.20633 4.00755C5.02571 3.82693 5.02571 3.53413 5.20633 3.35351L5.42438 3.13546C5.605 2.95484 5.89779 2.95484 6.07841 3.13546L10.7937 7.85074Z" fill="#162E3C"/></svg></button>
+              </div>
+            </div>
+          </div>
         </section>
       </header>
       <Reviews/>
